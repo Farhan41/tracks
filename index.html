@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Background Audio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /* General Reset */
         body, html {
@@ -81,8 +82,15 @@
 
         <!-- Download Link -->
         <a href="musa01.mp3" download class="download-link">Download Audio</a>
-        <p>জাসিয়া, আজকে এই লেকচারটা শোন! </p>
+        <p>জাসিয়া, তোমার প্রথম পার্ট কি শোনা হয়েছে?</p>
+        <button class="ybutton" onclick="navigateToPage2()">YES</button>
+        <button class="nbutton" onclick="navigateToPage()">No</button>
+        <div id="error-message">দুঃখিত জাসিয়া!</div>
     </div>
 
+
+   <script src="script.js"></script>
+
 </body>
+
 </html>

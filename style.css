@@ -1,0 +1,24 @@
+.ybutton{
+    padding: 8px 8px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nbutton{
+    padding: 8px 8px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#error-message {
+    margin-top: 10px;
+    color: white;
+    display: none; /* Hidden by default */
+    background-color: black;
+    padding: 8px 4px;
+    border: 1px solid white;
+}
