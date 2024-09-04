@@ -1,16 +1,25 @@
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
 .ybutton{
     padding: 8px 8px;
     background-color: orangered;
     color: white;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
 }
 
 .nbutton{
-    padding: 8px 8px;
+    padding: 8px 14px;
     background-color: gray;
     color: white;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
 }
 
