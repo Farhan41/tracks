@@ -3,6 +3,10 @@ function navigateToPage2() {
     window.location.href = 'page2.html';
 }
 
+function navigateToPage0() {
+    window.location.href = 'index.html';
+}
+
 function navigateToPage() {
     // window.location.href = 'index.html';
     
