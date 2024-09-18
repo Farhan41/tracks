@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Tracks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Image */
+        body {
+            background: url('images/sea.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Overlay for better text visibility */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        /* Container to keep content above the overlay */
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Styling the Audio Player */
+        audio {
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        /* Download Link */
+        a.download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #ff5722;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a.download-link:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+
+        
+
+       <div class="border">
+        <h1 class="heading">Favourite Tracks</h1>
+        
+        <!-- Track  eleven-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">11.Murottal Quran Merdu Penenang Hati  Surah Maryam</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/11.Murottal Quran Merdu Penenang Hati  Surah Maryam سورة مريم.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">11.Murottal Quran Merdu Penenang Hati  Surah Maryam:</h1>
+             <a class="a" href="recitations/11.Murottal Quran Merdu Penenang Hati  Surah Maryam سورة مريم.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track  Twelve-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">12.Surah Al-'Ankabut</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/12.Surah Al-'Ankabut THE SPIDER Ahmad Khedr Beautiful_Heart❤️melts Soothing Recitation. سورة العنكبوت.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">12.Surah Al-'Ankabut:</h1>
+             <a class="a" href="recitations/12.Surah Al-'Ankabut THE SPIDER Ahmad Khedr Beautiful_Heart❤️melts Soothing Recitation. سورة العنكبوت.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track  Thirteen-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">13.Surah Al-Hashr</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/13.Surah Al-Hashr _ Ayah 22-24 _ Sherif Mustafa _ سورة الحشر _ القارئ شريف مصطفى _ هُوَ اللَّهُ.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">13.Surah Al-Hashr:</h1>
+             <a class="a" href="recitations/13.Surah Al-Hashr _ Ayah 22-24 _ Sherif Mustafa _ سورة الحشر _ القارئ شريف مصطفى _ هُوَ اللَّهُ.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track  forteen-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">14.Surah Yaseen</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/14.Surah Yaseen _ Qari Tareq Mohammed _ سورة يس _ القارئ طارق محمد.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">14.Surah Yaseen:</h1>
+             <a class="a" href="recitations/14.Surah Yaseen _ Qari Tareq Mohammed _ سورة يس _ القارئ طارق محمد.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+          <!-- Track  fifteen-->
+          <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">15.AHWARUN AHWARUN</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/15.AHWARUN AHWARUN ISLAMIC ARABIC SLOWED  REVERB BEST VIRAL FAMOUS ARBIC NASHEED  YouTube.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">15.AHWARUN AHWARUN:</h1>
+             <a class="a" href="recitations/15.AHWARUN AHWARUN ISLAMIC ARABIC SLOWED  REVERB BEST VIRAL FAMOUS ARBIC NASHEED  YouTube.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <p><a class="pointer" href="index.html">back..</a></p>
+
+
+        </div>
+       </div>
+    </div>
+
+
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
