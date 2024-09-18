@@ -1,20 +1,15 @@
-console.log("Farhan")
-function navigateToPage2() {
-    window.location.href = './pages/page2.html';
-}
 
-function navigateToPage0() {
-    window.location.href = '../index.html';
-}
 
-function navigateToPage() {
-    // window.location.href = 'index.html';
-    
-    document.getElementById('error-message').style.display = 'block';
+document.querySelectorAll('.play').forEach(function(button, index) {
+    button.addEventListener('click', function() {
+        const popup = document.querySelectorAll('.popup')[index];
+        popup.style.display = 'block';
+    });
+});
 
-    setTimeout(function() {
-        document.getElementById('error-message').style.display = 'none';
-    }, 3000);
-    
-}
-
+document.querySelectorAll('.close-btn').forEach(function(button, index) {
+    button.addEventListener('click', function() {
+        const popup = document.querySelectorAll('.popup')[index];
+        popup.style.display = 'none';
+    });
+});

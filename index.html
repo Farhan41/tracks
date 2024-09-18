@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story of Musa (As)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Reset */
         body, html {
@@ -16,7 +17,7 @@
 
         /* Background Image */
         body {
-            background: url('images/original.jpg') no-repeat center center fixed;
+            background: url('images/sea.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
             text-align: center;
@@ -73,67 +74,234 @@
 <body>
 
     <div class="content">
-       <div class="border">
-        <h1 class="heading">The Story of Musa (عليه السلام)</h1>
-        <div class="middle">
-         <div class="flex">
-             <h1 class="h1">01.Part One:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa01.mp3" download class="download-link">Download audio </a>
-         </div>
- 
-         <div class="flex">
-             <h1 class="h1">02.Part Two:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa02.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-             <h1 class="h1">03.Part Three:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa03.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-             <h1 class="h1">04.Part Four:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa04.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-            <h1 class="h1">05.Part Five:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa05.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">06.Part Six:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa06.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">07.Part Seven:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa07.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">08.Part Eight:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa08.mp3" download class="download-link">Download audio</a>
-        </div>
 
         
 
-        </div>
- 
-         <p class="p"> Do you listen the 8th part?</p>
-         <div class="box">
-             <button class="ybutton" onclick="navigateToPage2()">YES</button>
-         <button class="nbutton" onclick="navigateToPage()">No</button>
+       <div class="border">
+        <h1 class="heading">Favourite Tracks</h1>
+        
+        <!-- Track one -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">01. Sura Bakara</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/1.bakara.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">01.Track One:</h1>
+             <a class="a" href="recitations/1.bakara.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
          </div>
-         <div class="p" id="error-message">Sorry!</div>
+        </div>
+
+         <!-- Track two start-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">02. Sura Kafirun Ikhlas Falaq  Nas</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/2.Ruqyah with Sura Kafirun Ikhlas Falaq  Nas l ৪ কল l Remove Jinn BlackMagic Envy Evileye OCD  YouTube.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">02.Track Two:</h1>
+             <a class="a" href="recitations/2.Ruqyah with Sura Kafirun Ikhlas Falaq  Nas l ৪ কল l Remove Jinn BlackMagic Envy Evileye OCD  YouTube.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track two end -->
+
+        <!-- Track three start-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">03.Rukiya Three</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/3.rukia-three.aac" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">03.Track Three:</h1>
+             <a class="a" href="recitations/3.rukia-three.aac">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track three four-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">04. Surah Maryam</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/4.Beautiful Quran Recitation Surah Maryam Verse 3035 (1).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">04.Track Four:</h1>
+             <a class="a" href="recitations/4.Beautiful Quran Recitation Surah Maryam Verse 3035 (1).mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track three five-->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">05. Surah AlIsraThe Night Journey</h1>  
+                  <audio autoplay loop controls>
+                    <source src="recitations/5.SPECTACULAR RECITATION  Surah AlIsraThe Night Journeyسورة الإسراء  Yasser Al Dosariياسرالدوسري.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">05.Track Five:</h1>
+             <a class="a" href="recitations/5.SPECTACULAR RECITATION  Surah AlIsraThe Night Journeyسورة الإسراء  Yasser Al Dosariياسرالدوسري.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track three six-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">06. Al Waqiah</h1>  
+                  <audio autoplay loop controls>
+                    <source src="recitations/6.Al Waqiah Live.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">06.Track Six:</h1>
+             <a class="a" href="recitations/6.Al Waqiah Live.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track three seven-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">07.Surah AlIsra</h1>  
+                  <audio autoplay loop controls>
+                    <source src="recitations/7.STUNNING RECITATION  Qari Ibrahim Idris  Surah AlIsra  الإسراء.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">07.Track Seven:</h1>
+             <a class="a" href="recitations/7.STUNNING RECITATION  Qari Ibrahim Idris  Surah AlIsra  الإسراء.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track three eight-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">08.Surah AnNaml</h1> 
+                  <audio autoplay loop controls>
+                    <source src="recitations/8.Surah AnNaml Emotional recitation by Islam Sobhi (1).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">06.Track Eight:</h1>
+             <a class="a" href="recitations/8.Surah AnNaml Emotional recitation by Islam Sobhi (1).mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track three Nine-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    <h1 class="track">09.Tawhid Song</h1> 
+                  <audio autoplay loop controls>
+                    <source src="recitations/9.Tawhid Song  Army of Mahdi 1438  YouTube.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">09.Track Nine:</h1>
+             <a class="a" href="recitations/9.Tawhid Song  Army of Mahdi 1438  YouTube.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track  Ten-->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <h1 class="track">10.Surah Al-Rahman</h1>
+                  <audio autoplay loop controls>
+                    <source src="recitations/10.Ahmad Khedr - Surah Al-Rahman احمد خضر - سورة الرحمن.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">10.Track Ten:</h1>
+             <a class="a" href="recitations/10.Ahmad Khedr - Surah Al-Rahman احمد خضر - سورة الرحمن.mp3">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+
+
+
+        </div>
        </div>
     </div>
 
